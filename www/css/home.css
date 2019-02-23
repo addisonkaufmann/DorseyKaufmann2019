@@ -1,21 +1,28 @@
 @font-face {
-  font-family: Franklin-Gothic-Book-Condensed;
+  font-family: Franklin-Gothic-Book-Compressed;
   src: url("../assets/fonts/ITCFranklinGothicStd-BkCp.otf") format("opentype"); }
 
-.home-full-size-parent {
+@font-face {
+  font-family: Franklin-Gothic-Demi-Compressed;
+  src: url("../assets/fonts/ITCFranklinGothicStd-DmCp.otf") format("opentype"); }
+
+.home .link-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: Franklin-Gothic-Book-Compressed;
+  color: black;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+.home .title {
+  letter-spacing: 8px;
+  font-size: 40px; }
+
+.home.full-size-container {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.home-title {
-  font-family: Garamond;
-  font-weight: 600;
-  letter-spacing: 8px; }
-
-.home-link {
-  font-family: Franklin-Gothic-Book-Condensed;
-  text-transform: uppercase;
-  letter-spacing: 4px; }

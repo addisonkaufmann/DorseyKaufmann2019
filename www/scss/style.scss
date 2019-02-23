@@ -1,11 +1,22 @@
-// @import "partials/colors";
-// @import "partials/fonts";
+@import "partials/colors";
+@import "partials/fonts";
 
-// .home-full-size-parent {
-//   height: 100vh;
-//   width: 100vw; 
-//   overflow: hidden; 
-//   display: flex; 
-//   align-items: center; 
-//   justify-content: center;
-// }
+h1, h2, h3, h4, h5, h6 {
+  font-family: Garamond;
+  font-weight: 600;
+  color: black;
+}
+
+a, p {
+  font-family: Franklin-Gothic-Book-Compressed;
+  color: black;
+}
+
+a.active {
+  font-family: Franklin-Gothic-Demi-Compressed
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}

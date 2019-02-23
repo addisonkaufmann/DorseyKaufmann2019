@@ -1,0 +1,51 @@
+.detail {
+  .title {
+    letter-spacing: 4px;
+    font-size: 30px;
+  }
+  .link-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: Franklin-Gothic-Book-Compressed;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 300px;
+    margin-left: 80px;
+  }
+  .top-nav {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .side-nav {
+    width: 250px;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    a {
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 34px;
+    }
+  }
+
+  .content {
+    color: blue;
+    width: 300px;
+    height: 400px;
+  }
+
+  .bottom-content {
+    display: flex;
+    margin-top: 30px;
+  }
+
+}
+
+.detail.container {
+  margin-top: 80px;
+}
+

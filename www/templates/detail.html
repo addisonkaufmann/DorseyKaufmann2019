@@ -1,0 +1,28 @@
+<div class="detail container">
+  <div class="top-nav">
+    <h1 class="title">Dorsey Bromwell Kaufmann</h1>
+    <div class="link-container">
+      <a ui-sref="art" ng-class="{'active': stateName === 'art'}">Art</a>
+      /
+      <a ui-sref="social-practice" ng-class="{'active': stateName === 'social-practice'}">Social Practice</a>
+      /
+      <a ui-sref="bio" ng-class="{'active': stateName === 'bio'}">Bio</a>
+    </div>
+  </div>
+
+  <div class="bottom-content">
+    <div class="side-nav">
+      <ul>
+        <li ng-repeat="link in links">
+          <a ui-sref=".({id: link.id})" ng-class="{'active': id === link.id}">
+            {{link.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <img style="width: 700px" src="https://gfnc1kn6pi-flywheel.netdna-ssl.com/wp-content/uploads/2017/05/girl-names.jpg"/>
+    </div>
+  </div>
+</div>

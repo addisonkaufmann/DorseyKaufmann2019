@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Franklin-Gothic-Book-Compressed;
+  src: url("../assets/fonts/ITCFranklinGothicStd-BkCp.otf") format("opentype"); }
+
+@font-face {
+  font-family: Franklin-Gothic-Demi-Compressed;
+  src: url("../assets/fonts/ITCFranklinGothicStd-DmCp.otf") format("opentype"); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Garamond;
+  font-weight: 600;
+  color: black; }
+
+a, p {
+  font-family: Franklin-Gothic-Book-Compressed;
+  color: black; }
+
+a.active {
+  font-family: Franklin-Gothic-Demi-Compressed; }
+
+a:hover {
+  text-decoration: none;
+  color: black; }
