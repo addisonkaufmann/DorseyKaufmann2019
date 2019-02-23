@@ -22,7 +22,9 @@
     </div>
 
     <div class="main-content">
-      <img style="width: 700px" src="https://gfnc1kn6pi-flywheel.netdna-ssl.com/wp-content/uploads/2017/05/girl-names.jpg"/>
+      <div ng-repeat="link in links" ng-if="id === link.id">
+        <h1>{{link.name}}</h1>
+      </div>
     </div>
   </div>
 </div>
