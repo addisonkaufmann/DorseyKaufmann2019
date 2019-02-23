@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Franklin-Gothic-Book-Condensed;
+  src: url("../assets/fonts/ITCFranklinGothicStd-BkCp.otf") format("opentype"); }
+
+.home-full-size-parent {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.home-title {
+  font-family: Garamond;
+  font-weight: 600;
+  letter-spacing: 8px; }
+
+.home-link {
+  font-family: Franklin-Gothic-Book-Condensed;
+  text-transform: uppercase;
+  letter-spacing: 4px; }
