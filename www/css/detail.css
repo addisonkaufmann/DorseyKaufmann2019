@@ -40,4 +40,5 @@
 
 .top-nav-container {
   height: 150px;
-  color: white; }
+  background-color: white;
+  z-index: 999; }
