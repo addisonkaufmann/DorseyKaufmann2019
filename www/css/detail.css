@@ -15,10 +15,13 @@
 
 .detail .top-nav {
   display: flex;
-  align-items: baseline; }
+  align-items: baseline;
+  padding-top: 80px; }
 
 .detail .side-nav {
-  width: 250px; }
+  margin-top: 150px;
+  min-width: 250px;
+  max-width: 250px; }
   .detail .side-nav ul {
     list-style: none;
     padding: 0; }
@@ -26,14 +29,15 @@
     font-size: 18px;
     line-height: 34px; }
 
-.detail .content {
-  color: blue;
-  width: 300px;
-  height: 400px; }
+.detail .main-content {
+  padding-top: 150px;
+  margin-left: 250px; }
 
-.detail .bottom-content {
-  display: flex;
-  margin-top: 30px; }
+.sticky {
+  background-color: white;
+  position: fixed;
+  width: 100%; }
 
-.detail.container {
-  margin-top: 80px; }
+.top-nav-container {
+  height: 150px;
+  color: white; }

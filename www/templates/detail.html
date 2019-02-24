@@ -1,17 +1,21 @@
-<div class="detail container">
-  <div class="top-nav">
-    <h1 class="title">Dorsey Bromwell Kaufmann</h1>
-    <div class="link-container">
-      <a ui-sref="art" ng-class="{'active': stateName === 'art'}">Art</a>
-      /
-      <a ui-sref="social-practice" ng-class="{'active': stateName === 'social-practice'}">Social Practice</a>
-      /
-      <a ui-sref="bio" ng-class="{'active': stateName === 'bio'}">Bio</a>
+<div class="detail sticky top-nav-container">
+  <div class="container">
+    <div class="top-nav">
+      <h1 class="title">Dorsey Bromwell Kaufmann</h1>
+      <div class="link-container">
+        <a ui-sref="art" ng-class="{'active': stateName === 'art'}">Art</a>
+        /
+        <a ui-sref="social-practice" ng-class="{'active': stateName === 'social-practice'}">Social Practice</a>
+        /
+        <a ui-sref="bio" ng-class="{'active': stateName === 'bio'}">Bio</a>
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="bottom-content">
-    <div class="side-nav">
+<div class="detail">
+  <div class="container">
+    <div class="side-nav sticky">
       <ul>
         <li ng-repeat="link in links">
           <a ui-sref=".({id: link.id})" ng-class="{'active': id === link.id}">
@@ -24,6 +28,43 @@
     <div class="main-content">
       <div ng-repeat="link in links" ng-if="id === link.id">
         <h1>{{link.name}}</h1>
+        <p>
+          Lorem ipsum dolor sit amet, habitant est, eget adipiscing quisque sit, cras malesuada viverra suspendisse egestas amet hendrerit, in donec, eleifend aenean fringilla tempus sollicitudin nullam. Mauris aliquet vel, ligula pulvinar vitae faucibus hendrerit aptent dolore, sed aliquam. Imperdiet egestas eros enim nullam a consequat. Venenatis vestibulum mattis ante etiam condimentum, aliquam sollicitudin at cras urna sapien accumsan, sollicitudin nunc a sollicitudin elementum, ultricies ut tempus ligula dapibus, cum vitae sapien. Sed malesuada lacinia at neque felis, donec sit faucibus pulvinar bibendum, eget eget quis wisi, varius quos habitasse fusce taciti. Duis penatibus velit ut urna elementum, pellentesque elit non dolor tellus, hymenaeos praesent velit maecenas nam pretium. Est a neque a, neque id pretium aliquam natoque integer atque, vestibulum a aliquam. Sed et nec, ante viverra nam purus amet nunc pulvinar, quam dui fringilla neque, diam tristique porta. Nam purus lectus ut in dis enim, cursus suspendisse eget a, feugiat urna interdum ut, congue suspendisse pellentesque imperdiet. Quis nulla, quam quis risus eget orci per ut, libero molestie tortor mi leo amet sem. Dignissim nibh nam tempor nulla. Ad praesent nibh eros hendrerit facilisis, dis tortor auctor ut, velit augue nulla hendrerit magna tellus sagittis, ut ultricies sapien.
+
+Eleifend suspendisse nec sodales in est erat, dictum tortor, sodales enim urna, commodo in. Consequat interdum, dolor vel aliquam nunc tenetur, amet maecenas, tempor vehicula sapien. Duis dolor leo sociis sit nullam aliquam. Sagittis hendrerit erat. Mus dui nulla leo mauris sit quam, pellentesque suspendisse aptent, euismod curabitur.
+
+Sed justo tristique. Ante faucibus. A orci sem viverra massa. Etiam sit, molestie elit mattis. Commodo eu, in phasellus, eget per tortor enim, congue volutpat eu blandit sapien mi felis, vel at. Vivamus semper suspendisse, velit provident donec amet sollicitudin proin vestibulum, tempus elit eveniet. Nec elit tempor in, est quisque id quis quis pellentesque, vitae pretium tempor posuere integer, non ut a et eum, nec ullamcorper. Vestibulum ut, nulla ut viverra eget quis elit.
+
+Sit nulla dictumst eget consequat, proin vestibulum sapien suscipit, vel nullam enim dui lectus, euismod non auctor quis condimentum, est dui sed ut leo tempor. Dignissim dui elit. Urna montes at, amet suspendisse feugiat sodales. Sed sed id aliquet, id proin posuere tellus mauris. Metus mauris massa purus phasellus.
+Lorem ipsum dolor sit amet, habitant est, eget adipiscing quisque sit, cras malesuada viverra suspendisse egestas amet hendrerit, in donec, eleifend aenean fringilla tempus sollicitudin nullam. Mauris aliquet vel, ligula pulvinar vitae faucibus hendrerit aptent dolore, sed aliquam. Imperdiet egestas eros enim nullam a consequat. Venenatis vestibulum mattis ante etiam condimentum, aliquam sollicitudin at cras urna sapien accumsan, sollicitudin nunc a sollicitudin elementum, ultricies ut tempus ligula dapibus, cum vitae sapien. Sed malesuada lacinia at neque felis, donec sit faucibus pulvinar bibendum, eget eget quis wisi, varius quos habitasse fusce taciti. Duis penatibus velit ut urna elementum, pellentesque elit non dolor tellus, hymenaeos praesent velit maecenas nam pretium. Est a neque a, neque id pretium aliquam natoque integer atque, vestibulum a aliquam. Sed et nec, ante viverra nam purus amet nunc pulvinar, quam dui fringilla neque, diam tristique porta. Nam purus lectus ut in dis enim, cursus suspendisse eget a, feugiat urna interdum ut, congue suspendisse pellentesque imperdiet. Quis nulla, quam quis risus eget orci per ut, libero molestie tortor mi leo amet sem. Dignissim nibh nam tempor nulla. Ad praesent nibh eros hendrerit facilisis, dis tortor auctor ut, velit augue nulla hendrerit magna tellus sagittis, ut ultricies sapien.
+
+Eleifend suspendisse nec sodales in est erat, dictum tortor, sodales enim urna, commodo in. Consequat interdum, dolor vel aliquam nunc tenetur, amet maecenas, tempor vehicula sapien. Duis dolor leo sociis sit nullam aliquam. Sagittis hendrerit erat. Mus dui nulla leo mauris sit quam, pellentesque suspendisse aptent, euismod curabitur.
+
+Sed justo tristique. Ante faucibus. A orci sem viverra massa. Etiam sit, molestie elit mattis. Commodo eu, in phasellus, eget per tortor enim, congue volutpat eu blandit sapien mi felis, vel at. Vivamus semper suspendisse, velit provident donec amet sollicitudin proin vestibulum, tempus elit eveniet. Nec elit tempor in, est quisque id quis quis pellentesque, vitae pretium tempor posuere integer, non ut a et eum, nec ullamcorper. Vestibulum ut, nulla ut viverra eget quis elit.
+
+Sit nulla dictumst eget consequat, proin vestibulum sapien suscipit, vel nullam enim dui lectus, euismod non auctor quis condimentum, est dui sed ut leo tempor. Dignissim dui elit. Urna montes at, amet suspendisse feugiat sodales. Sed sed id aliquet, id proin posuere tellus mauris. Metus mauris massa purus phasellus.
+Lorem ipsum dolor sit amet, habitant est, eget adipiscing quisque sit, cras malesuada viverra suspendisse egestas amet hendrerit, in donec, eleifend aenean fringilla tempus sollicitudin nullam. Mauris aliquet vel, ligula pulvinar vitae faucibus hendrerit aptent dolore, sed aliquam. Imperdiet egestas eros enim nullam a consequat. Venenatis vestibulum mattis ante etiam condimentum, aliquam sollicitudin at cras urna sapien accumsan, sollicitudin nunc a sollicitudin elementum, ultricies ut tempus ligula dapibus, cum vitae sapien. Sed malesuada lacinia at neque felis, donec sit faucibus pulvinar bibendum, eget eget quis wisi, varius quos habitasse fusce taciti. Duis penatibus velit ut urna elementum, pellentesque elit non dolor tellus, hymenaeos praesent velit maecenas nam pretium. Est a neque a, neque id pretium aliquam natoque integer atque, vestibulum a aliquam. Sed et nec, ante viverra nam purus amet nunc pulvinar, quam dui fringilla neque, diam tristique porta. Nam purus lectus ut in dis enim, cursus suspendisse eget a, feugiat urna interdum ut, congue suspendisse pellentesque imperdiet. Quis nulla, quam quis risus eget orci per ut, libero molestie tortor mi leo amet sem. Dignissim nibh nam tempor nulla. Ad praesent nibh eros hendrerit facilisis, dis tortor auctor ut, velit augue nulla hendrerit magna tellus sagittis, ut ultricies sapien.
+
+Eleifend suspendisse nec sodales in est erat, dictum tortor, sodales enim urna, commodo in. Consequat interdum, dolor vel aliquam nunc tenetur, amet maecenas, tempor vehicula sapien. Duis dolor leo sociis sit nullam aliquam. Sagittis hendrerit erat. Mus dui nulla leo mauris sit quam, pellentesque suspendisse aptent, euismod curabitur.
+
+Sed justo tristique. Ante faucibus. A orci sem viverra massa. Etiam sit, molestie elit mattis. Commodo eu, in phasellus, eget per tortor enim, congue volutpat eu blandit sapien mi felis, vel at. Vivamus semper suspendisse, velit provident donec amet sollicitudin proin vestibulum, tempus elit eveniet. Nec elit tempor in, est quisque id quis quis pellentesque, vitae pretium tempor posuere integer, non ut a et eum, nec ullamcorper. Vestibulum ut, nulla ut viverra eget quis elit.
+
+Sit nulla dictumst eget consequat, proin vestibulum sapien suscipit, vel nullam enim dui lectus, euismod non auctor quis condimentum, est dui sed ut leo tempor. Dignissim dui elit. Urna montes at, amet suspendisse feugiat sodales. Sed sed id aliquet, id proin posuere tellus mauris. Metus mauris massa purus phasellus.
+Lorem ipsum dolor sit amet, habitant est, eget adipiscing quisque sit, cras malesuada viverra suspendisse egestas amet hendrerit, in donec, eleifend aenean fringilla tempus sollicitudin nullam. Mauris aliquet vel, ligula pulvinar vitae faucibus hendrerit aptent dolore, sed aliquam. Imperdiet egestas eros enim nullam a consequat. Venenatis vestibulum mattis ante etiam condimentum, aliquam sollicitudin at cras urna sapien accumsan, sollicitudin nunc a sollicitudin elementum, ultricies ut tempus ligula dapibus, cum vitae sapien. Sed malesuada lacinia at neque felis, donec sit faucibus pulvinar bibendum, eget eget quis wisi, varius quos habitasse fusce taciti. Duis penatibus velit ut urna elementum, pellentesque elit non dolor tellus, hymenaeos praesent velit maecenas nam pretium. Est a neque a, neque id pretium aliquam natoque integer atque, vestibulum a aliquam. Sed et nec, ante viverra nam purus amet nunc pulvinar, quam dui fringilla neque, diam tristique porta. Nam purus lectus ut in dis enim, cursus suspendisse eget a, feugiat urna interdum ut, congue suspendisse pellentesque imperdiet. Quis nulla, quam quis risus eget orci per ut, libero molestie tortor mi leo amet sem. Dignissim nibh nam tempor nulla. Ad praesent nibh eros hendrerit facilisis, dis tortor auctor ut, velit augue nulla hendrerit magna tellus sagittis, ut ultricies sapien.
+
+Eleifend suspendisse nec sodales in est erat, dictum tortor, sodales enim urna, commodo in. Consequat interdum, dolor vel aliquam nunc tenetur, amet maecenas, tempor vehicula sapien. Duis dolor leo sociis sit nullam aliquam. Sagittis hendrerit erat. Mus dui nulla leo mauris sit quam, pellentesque suspendisse aptent, euismod curabitur.
+
+Sed justo tristique. Ante faucibus. A orci sem viverra massa. Etiam sit, molestie elit mattis. Commodo eu, in phasellus, eget per tortor enim, congue volutpat eu blandit sapien mi felis, vel at. Vivamus semper suspendisse, velit provident donec amet sollicitudin proin vestibulum, tempus elit eveniet. Nec elit tempor in, est quisque id quis quis pellentesque, vitae pretium tempor posuere integer, non ut a et eum, nec ullamcorper. Vestibulum ut, nulla ut viverra eget quis elit.
+
+Sit nulla dictumst eget consequat, proin vestibulum sapien suscipit, vel nullam enim dui lectus, euismod non auctor quis condimentum, est dui sed ut leo tempor. Dignissim dui elit. Urna montes at, amet suspendisse feugiat sodales. Sed sed id aliquet, id proin posuere tellus mauris. Metus mauris massa purus phasellus.
+Lorem ipsum dolor sit amet, habitant est, eget adipiscing quisque sit, cras malesuada viverra suspendisse egestas amet hendrerit, in donec, eleifend aenean fringilla tempus sollicitudin nullam. Mauris aliquet vel, ligula pulvinar vitae faucibus hendrerit aptent dolore, sed aliquam. Imperdiet egestas eros enim nullam a consequat. Venenatis vestibulum mattis ante etiam condimentum, aliquam sollicitudin at cras urna sapien accumsan, sollicitudin nunc a sollicitudin elementum, ultricies ut tempus ligula dapibus, cum vitae sapien. Sed malesuada lacinia at neque felis, donec sit faucibus pulvinar bibendum, eget eget quis wisi, varius quos habitasse fusce taciti. Duis penatibus velit ut urna elementum, pellentesque elit non dolor tellus, hymenaeos praesent velit maecenas nam pretium. Est a neque a, neque id pretium aliquam natoque integer atque, vestibulum a aliquam. Sed et nec, ante viverra nam purus amet nunc pulvinar, quam dui fringilla neque, diam tristique porta. Nam purus lectus ut in dis enim, cursus suspendisse eget a, feugiat urna interdum ut, congue suspendisse pellentesque imperdiet. Quis nulla, quam quis risus eget orci per ut, libero molestie tortor mi leo amet sem. Dignissim nibh nam tempor nulla. Ad praesent nibh eros hendrerit facilisis, dis tortor auctor ut, velit augue nulla hendrerit magna tellus sagittis, ut ultricies sapien.
+
+Eleifend suspendisse nec sodales in est erat, dictum tortor, sodales enim urna, commodo in. Consequat interdum, dolor vel aliquam nunc tenetur, amet maecenas, tempor vehicula sapien. Duis dolor leo sociis sit nullam aliquam. Sagittis hendrerit erat. Mus dui nulla leo mauris sit quam, pellentesque suspendisse aptent, euismod curabitur.
+
+Sed justo tristique. Ante faucibus. A orci sem viverra massa. Etiam sit, molestie elit mattis. Commodo eu, in phasellus, eget per tortor enim, congue volutpat eu blandit sapien mi felis, vel at. Vivamus semper suspendisse, velit provident donec amet sollicitudin proin vestibulum, tempus elit eveniet. Nec elit tempor in, est quisque id quis quis pellentesque, vitae pretium tempor posuere integer, non ut a et eum, nec ullamcorper. Vestibulum ut, nulla ut viverra eget quis elit.
+
+Sit nulla dictumst eget consequat, proin vestibulum sapien suscipit, vel nullam enim dui lectus, euismod non auctor quis condimentum, est dui sed ut leo tempor. Dignissim dui elit. Urna montes at, amet suspendisse feugiat sodales. Sed sed id aliquet, id proin posuere tellus mauris. Metus mauris massa purus phasellus.
+        </p>
       </div>
     </div>
   </div>

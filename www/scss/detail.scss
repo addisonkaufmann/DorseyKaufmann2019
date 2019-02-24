@@ -17,10 +17,13 @@
   .top-nav {
     display: flex;
     align-items: baseline;
+    padding-top: 80px;
   }
 
   .side-nav {
-    width: 250px;
+    margin-top: 150px;
+    min-width: 250px;
+    max-width: 250px;
     ul {
       list-style: none;
       padding: 0;
@@ -31,20 +34,30 @@
     }
   }
 
-  .content {
-    color: blue;
-    width: 300px;
-    height: 400px;
-  }
+  // .content {
+  //   color: blue;
+  //   width: 300px;
+  //   height: 400px;
+  // }
 
-  .bottom-content {
-    display: flex;
-    margin-top: 30px;
+  // .bottom-content {
+  //   display: flex;
+  // }
+
+  .main-content {
+    padding-top: 150px;
+    margin-left: 250px;
   }
 
 }
 
-.detail.container {
-  margin-top: 80px;
+.sticky {
+  background-color: white;
+  position: fixed;
+  width: 100%;
 }
 
+.top-nav-container {
+  height: 150px;
+  color: white;
+}
