@@ -1,22 +1,52 @@
 @import "partials/colors";
 @import "partials/fonts";
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: Garamond;
   font-weight: 600;
   color: black;
 }
 
-a, p {
-  font-family: Franklin-Gothic-Book-Compressed;
+h4, h5, h6 {
+  font-family: Franklin-Gothic-Demi-Compressed;
   color: black;
 }
 
+a, p, tr, td {
+  font-family: Franklin-Gothic-Book-Compressed;
+  color: black;
+  letter-spacing: 0.4px;
+}
+
+span.emphasis {
+	font-family: Garamond;
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
 a.active {
-  font-family: Franklin-Gothic-Demi-Compressed
+  font-family: Franklin-Gothic-Demi-Compressed;
 }
 
 a:hover {
   text-decoration: none;
   color: black;
+}
+
+.cv {
+	h4 {
+		font-size: 17px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	tr, td, p {
+		font-size: 15px;
+		line-height: 20px;
+		margin-bottom: 5px;
+		letter-spacing: 0.2px;
+	}
+	table {
+		margin-bottom: 20px;
+	}
 }
