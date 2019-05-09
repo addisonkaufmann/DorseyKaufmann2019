@@ -27,7 +27,8 @@
 
     <div class="main-content">
       <div ng-repeat="link in links" ng-if="id === link.id">
-        <div ng-class="link.id" ng-include="'templates/' + link.id + '.html'"></div>
+        <div ng-class="link.id" ng-include="'templates/' + link.id + '.html'" ng-if="link.id === 'cv' || link.id === 'contact' || link.id === 'thesis'"></div>
+        <div ng-class="link.id" ng-include="'templates/content.html'" ng-if="link.id !== 'cv' && link.id !== 'contact' && link.id !== 'thesis'"></div>
       </div>
     </div>
   </div>
